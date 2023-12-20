@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Cards Slider</title>
+    <!-- Add Bootstrap CSS (you may need to adjust the path) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      body {
+          background-color: #E5F3FD; /* Set the background color to green */
+      }
+  </style>
+</head>
+<body>
+
+<!-- Navbar starts -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Logo" height="30">
+    </a>
+
+    <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Books</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Writers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Publishers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navbar-icons">
+        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+
+        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+
+        <a href="signup.html" class="user-profile-link">
+          <div class="user-profile">
+            <img src="images/user_profile.jpg" alt="User Profile" class="rounded-circle" height="40">
+          </div>
+        </a>
+    </div>
+</nav>
+<!-- Navbar ends -->
+
+<div class="container mt-5 mb-5">
+    <div id="bookCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Book content will be dynamically added here -->
+        </div>
+        <a class="carousel-control-prev" href="#bookCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#bookCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<!-- two books section -->
+<section class="two-book-section">
+  <div class="container">
+
+  </div>
+</section>
+<!-- End of two books section -->
+
+<!-- many books section -->
+<section class="many-books-section">
+  <div class="container">
+    <h1 style="text-align: center; ">Shopfront</h1>
+  </div>
+
+  <div class="container" style="margin-top: 50px;">
+    <div class="row" style="justify-content: space-between;">
+      <ul class="nav nav-tabs" style="width: 65%;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Art & Photography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Audio books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Biography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Business</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Childrens book</a>
+        </li>
+      </ul>
+  
+      <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Filter
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Popular</a>
+          <a class="dropdown-item" href="#">Recent</a>
+          <a class="dropdown-item" href="#">Best seller</a>
+        </div>
+      </div>     
+    </div>
+    
+    <div id="gridContainer" class="mb-grid-container"></div>
+
+    <div style="display: flex; justify-content: center;">
+      <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='books.html'">All Books</button>
+    </div>
+
+  </div>
+</section>
+<!-- End of many books section -->
+
+<!-- popular writers Section -->
+<section>
+  <div class="container">
+    <h1 style="text-align: center; ">Popular writer</h1>
+  </div>
+  
+  <div class="container" style="display: flex; justify-content: center; margin-top: 50px; margin-bottom: 50px;">
+    <div class="row">
+      <div style="width: 30%; ">
+        <h1 >John Fowles</h1>
+        <p style="color: #dbbb18;">31 March 1926</p>
+
+        <div class="row" style="height: 10px; margin-bottom: 20px;">
+          <div style="border-top: 1px solid grey; width: 90%; margin-top: 14px;"></div>
+          <div style="margin-top: 5px;">
+            <i class="fas fa-quote-right"></i> 
+          </div>
+        </div>
+
+        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat, libero eget aliquam maximus, ipsum ipsum sodales odio, ac malesuada nunc lorem vitae magna.</p>
+      </div>
+        
+      <div style="width: 30%; display: flex; justify-content: center;">
+        <img src="images/John_Fowles.jpg" alt="">
+      </div>
+        
+      <div style="width: 40%;">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat, libero eget aliquam maximus, ipsum ipsum sodales odio, ac malesuada nunc lorem vitae magna.</p>
+        <h3>Books</h3>
+        <div class="row">
+          <img src="images/harry_potter_1.jpeg" alt="" style="margin-left: 20px;">
+          <img src="images/harry_potter_2.jpeg" alt="" style="margin-left: 20px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: center; margin-bottom: 50px;">
+    <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='writers.html'">To writer page</button>
+  </div>
+</section>
+<!-- End of popular writers -->
+
+<!-- literature news section -->
+
+<section class="literature-news-section">
+  <div class="container">
+    <h1 style="text-align: center; ">Literature news</h1>
+  </div>
+
+  <div class="news-container">
+    <div class="news-card">
+      <img class="news-image" src="https://s26162.pcdn.co/wp-content/uploads/2023/12/bowen-yang-george-santos-snl.jpg" alt="News Image">
+      <div class="news-content">
+        <div class="news-date">December 1, 2023</div>
+        <div class="news-name">Unsurprisingly, George Santos doesn’t know who James Baldwin is.</div>
+      </div>
+    </div>
+  
+    <div class="news-card">
+      <img class="news-image" src="https://s26162.pcdn.co/wp-content/uploads/2023/12/71nXPQKaCUL._AC_UF10001000_QL80_.jpg" alt="News Image">
+      <div class="news-content">
+        <div class="news-date">December 2, 2023</div>
+        <div class="news-name">5 new books out today!</div>
+      </div>
+    </div>
+  
+    <div class="news-card">
+      <img class="news-image" src="https://s26162.pcdn.co/wp-content/uploads/2023/12/fast-for-gaza-horizontal.jpg" alt="News Image">
+      <div class="news-content">
+        <div class="news-date">December 3, 2023</div>
+        <div class="news-name">A coalition of writers and artists are launching a Fast for Gaza.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: center; margin-bottom: 50px; margin-top: 50px;">
+    <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='news.html'">All news</button>
+  </div>
+
+</section>
+
+<!-- End of literature news -->
+
+<div class="footer-container">
+  <div class="footer-section">
+    <h2 class="footer-heading">About</h2>
+    <p>Bookshop.org began as an idea to help support bookstores and their communities as more and more people are buying their books online. We saw an opportunity to create an alternative to Amazon for socially-conscious online shoppers.</p>
+  </div>
+
+  <div class="footer-section">
+    <h2 class="footer-heading">Stay in Touch</h2>
+    <p>Subscribe to our newsletter for updates and news.</p>
+    <form class="footer-form">
+      <!-- Add your newsletter form here -->
+      <div class="form-container">
+        <input type="email" class="form-input" placeholder="Enter your email">
+        <button type="submit" class="form-button">Subscribe</button>
+      </div>
+    </form>
+
+    <h2 class="footer-heading">Follow Us</h2>
+    <ul class="footer-list">
+      <li class="footer-list-item"><a class="footer-link" href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+      <li class="footer-list-item"><a class="footer-link" href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+      <li class="footer-list-item"><a class="footer-link" href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Add Bootstrap JS and Popper.js (you may need to adjust the paths) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Include the JavaScript file -->
+<script src="scripts/get7HarryPotter.js"></script>
+<script src="scripts/getManyBooks.js"></script>
+
+</body>
+</html>

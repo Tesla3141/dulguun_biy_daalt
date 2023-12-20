@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Cards Slider</title>
+    <!-- Add Bootstrap CSS (you may need to adjust the path) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      body {
+          background-color: white; /* Set the background color to green */
+      }
+  </style>
+</head>
+<body>
+
+<!-- Navbar starts -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Logo" height="30">
+    </a>
+
+    <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Books</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Writers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Publishers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navbar-icons">
+        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+
+        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+
+        <div class="user-profile">
+            <img src="images/user_profile.jpg" alt="User Profile" class="rounded-circle" height="30">
+        </div>
+    </div>
+</nav>
+<!-- Navbar ends -->
+
+<!-- popular writers Section -->
+<section style="background-color: white;">
+  <div class="container" style="margin-top: 40px;">
+    <h1 style="text-align: center; ">Popular writers</h1>
+  </div>
+  
+  <!-- first writer -->
+  <div class="container" style="display: flex; justify-content: center; margin-top: 50px; margin-bottom: 50px;">
+    <div class="row">
+      <div style="width: 30%; ">
+        <h1 >John Fowles</h1>
+        <p style="color: #dbbb18;">31 March 1926</p>
+
+        <div class="row" style="height: 10px; margin-bottom: 20px;">
+          <div style="border-top: 1px solid grey; width: 90%; margin-top: 14px;"></div>
+          <div style="margin-top: 5px;">
+            <i class="fas fa-quote-right"></i> 
+          </div>
+        </div>
+
+        <p >Let those love now who've never loved; let those who've loved, love yet again.</p>
+      </div>
+        
+      <div style="width: 30%; display: flex; justify-content: center;">
+        <img src="images/John_Fowles.jpg" alt="">
+      </div>
+        
+      <div style="width: 40%;">
+        <h3>About</h3>
+        <p>Fowles was born in Leigh-on-Sea in Essex, England, the only son and elder child (a sister, Hazel, was born fifteen years later) of Robert John Fowles and Gladys May, née Richards.</p>
+        <h3>Books</h3>
+        <div class="row">
+          <img src="images/harry_potter_1.jpeg" alt="" style="margin-left: 20px;">
+          <img src="images/harry_potter_2.jpeg" alt="" style="margin-left: 20px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- second writer -->
+  <div class="container" style="display: flex; justify-content: center; margin-top: 100px; margin-bottom: 50px;">
+    <div class="row">
+      <div style="width: 30%; ">
+        <h1 >Yu Hua</h1>
+        <p style="color: #dbbb18;">3 April 1987</p>
+
+        <div class="row" style="height: 10px; margin-bottom: 20px;">
+          <div style="border-top: 1px solid grey; width: 90%; margin-top: 14px;"></div>
+          <div style="margin-top: 5px;">
+            <i class="fas fa-quote-right"></i> 
+          </div>
+        </div>
+
+        <p >We survive in adversity and perish in ease and comfort.</p>
+      </div>
+        
+      <div style="width: 30%; display: flex; justify-content: center;">
+        <img src="images/ui_hua.jpeg" alt="">
+      </div>
+        
+      <div style="width: 40%;">
+        <h3>About</h3>
+        <p>Yu Hua is a Chinese author, widely considered the foremost writer of avant-garde fiction and one of the greatest living authors in China. Shortly after his debut as a fiction writer in 1983, his first breakthrough came in 1987, when he released the short story "On the Road at Age Eighteen".</p>
+        <h3>Books</h3>
+        <div class="row">
+          <img src="images/to_live.jpg" alt="" style="margin-left: 20px;">
+          <img src="images/brothers.jpg" alt="" style="margin-left: 20px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- third writer -->
+  <div class="container" style="display: flex; justify-content: center; margin-top: 100px; margin-bottom: 70px;">
+    <div class="row">
+      <div style="width: 30%; ">
+        <h1 >Haruki Murakami</h1>
+        <p style="color: #dbbb18;">12 January 1949</p>
+
+        <div class="row" style="height: 10px; margin-bottom: 20px;">
+          <div style="border-top: 1px solid grey; width: 90%; margin-top: 14px;"></div>
+          <div style="margin-top: 5px;">
+            <i class="fas fa-quote-right"></i> 
+          </div>
+        </div>
+
+        <p >It’s all a question of imagination. Our responsibility begins with the power to imagine.</p>
+      </div>
+        
+      <div style="width: 30%; display: flex; justify-content: center;">
+        <img src="images/haruki.jpeg" alt="">
+      </div>
+        
+      <div style="width: 40%;">
+        <h3>About</h3>
+        <p>Haruki Murakami is a Japanese writer. His novels, essays, and short stories have been bestsellers in Japan and internationally, with his work translated into 50 languages and having sold millions of copies outside Japan.</p>
+        <h3>Books</h3>
+        <div class="row">
+          <img src="images/manga_stories.jpeg" alt="" style="margin-left: 20px;">
+          <img src="images/1Q84.jpeg" alt="" style="margin-left: 20px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of popular writers -->
+
+<div class="footer-container">
+  <div class="footer-section">
+    <h2 class="footer-heading">About</h2>
+    <p>Bookshop.org began as an idea to help support bookstores and their communities as more and more people are buying their books online. We saw an opportunity to create an alternative to Amazon for socially-conscious online shoppers.</p>
+  </div>
+
+  <div class="footer-section">
+    <h2 class="footer-heading">Stay in Touch</h2>
+    <p>Subscribe to our newsletter for updates and news.</p>
+    <form class="footer-form">
+      <!-- Add your newsletter form here -->
+      <div class="form-container">
+        <input type="email" class="form-input" placeholder="Enter your email">
+        <button type="submit" class="form-button">Subscribe</button>
+      </div>
+    </form>
+
+    <h2 class="footer-heading">Follow Us</h2>
+    <ul class="footer-list">
+      <li class="footer-list-item"><a class="footer-link" href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+      <li class="footer-list-item"><a class="footer-link" href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+      <li class="footer-list-item"><a class="footer-link" href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Add Bootstrap JS and Popper.js (you may need to adjust the paths) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
